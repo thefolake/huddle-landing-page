@@ -1,0 +1,139 @@
+body, html, h1, div, span, p, footer, main {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --softMagenta: hsl(300, 69%, 71%);
+    --violet: hsl(257, 40%, 49%);
+    --white: #FFFFFF
+}
+
+body {
+    background: url("images/bg-desktop.svg") var(--violet);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+    height: 100vh;
+    justify-content: center;
+    padding: 0 80px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.text-container {
+    color: var(--white);
+    width: 35%;
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.text-container p {
+    margin: 26px 0 16px 0;
+    line-height: 26px;
+}
+
+button {
+    border: 1px solid var(--white);
+    border-radius: 25px;
+    box-shadow: 5px 6px 7px 0px hsl(257deg 45% 34%);
+    color: var(--violet);
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    padding: 15px 55px;
+}
+
+button:hover {
+    border: 1px solid var(--softMagenta);
+    background: var(--softMagenta);
+}
+
+.icon-container {
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+.icon-container i {
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    color: var(--white);
+    font-size: 20px;
+    padding: 12px;
+}
+
+.icon-container i:hover {
+    border: 1px solid var(--softMagenta);
+    color: var(--softMagenta);
+}
+
+@media screen and (max-width: 700px){
+
+    .container {
+        height: 100%;
+        gap: 50px;
+        padding: 10px 20px;
+    }
+
+    .logo {
+        height: 50px;
+        width: 165px;
+    }
+
+    .content {
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .text-container {
+        text-align: center;
+        width: auto;
+    }
+
+    .illustration {
+        width: 281px;
+    }
+
+    .icon-container {
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .text-container p {
+        /*margin: 26px 0 16px 0;*/
+        /*line-height: 20px;*/
+    }
+
+    .button {
+        padding: 10px 80px;
+    }
+
+    .icon-container i {
+        font-size: 14px;
+    }
+    
+}
+
+
+@media screen and (max-width: 1000px){
+    .illustration {
+        width: 468px;
+    }
+}
